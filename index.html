@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wellness Resort</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="java.js"></script>
+</head>
+  
+<body>
+  <header>
+    <div class="text-box">
+        <h1 id="title">The Wellness Spa Survey</h1>
+            <p id="description">Tell us about your experience</h>
+            <i class="fa fa-leaf"></i>
+    </div>
+  </header>
+
+
+<div class="container">
+  <div class="upper">
+    <form id="survey-form" method="GET">
+
+        <div class="labels">
+            <label id="name-label" for="name">Full Name</label>   
+        </div>    
+        <div class="right">
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        
+
+        <div class="labels">
+            <label id="email-label" for="email">Email</label> 
+        </div>
+        <div class="right">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+       
+        
+        <div class="labels">
+            <label id="number-label" for="age">Age</label>   
+        </div>    
+        <div class="right">
+            <input type="number" min="1" max="110" id="number" name="age" placeholder="0">
+        </div>
+
+        <div class="labels">
+            <label id="gender-label" for="gender">Gender</label>   
+        </div>
+        <div class="right">
+            <label><input id="gender" value="male" type="radio" name="gender"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> Male</label>&nbsp&nbsp
+            <label><input id="gender" value="female" type="radio" name="gender"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> Female</label>&nbsp&nbsp
+            <label><input id="gender" value="other" type="radio" name="gender"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> Other</label>
+        </div>
+        
+        <div class="labels">
+            <label id="frequency-label" for="visitfrequency">How often do you get a spa treatment?</label>
+        </div>
+        <div class="right">
+            <select name="visitfrequency" id="dropdown">
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="fewtimesayear">A few times a year</option>
+                <option value="yearly">Once a year</option>
+                <option value="firsttime">This was my first time</option>
+            </select>
+        </div>
+      
+        <div class="labels">
+            <label id="packets-label" for="packets">Which package do you prefer?</label>   
+        </div>
+        <div class="right">
+            <label><input id="morning" value="morning" type="radio" name="packets"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> Morning</label>&nbsp&nbsp
+            <label><input id="afternoon" value="afternoon" type="radio"  name="packets"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> Afternoon</label>&nbsp&nbsp
+            <label><input id="fullday" value="fullday" type="radio" name="packets"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> Full Day</label>
+        </div>
+
+         <div class="labels">
+            <label id="treatment-label" for="treatment">What is your favorite treatment? <br> 
+                (Choose one or more)</label> 
+         </div>
+         <ul id="treatment" style="list-style: none" class="right">   
+                <li class="checkbox"><label><input type="checkbox" id="treatment" value="aromatherapy"><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i>  Aromatherapy</label></input></li>
+                <li class="checkbox"><label><input type="checkbox" id="treatment" value="facial treatment"><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i> Facial treatment</label></input></li>
+                <li class="checkbox"><label><input type="checkbox" id="treatment" value="aromatherapy"><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i> Hot Stone Massage</label></input></li>
+                <li class="checkbox"><label><input type="checkbox" id="treatment" value="sauna"><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i> Sauna</label></input></li>
+                <li class="checkbox"><label><input type="checkbox" id="treatment" value="hammam"><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i> Hammam</label></input></li>
+                <li class="checkbox"><label><input type="checkbox" id="treatment" value="manicure"><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i> Manicure</label></input></li>
+                <li class="checkbox"><label><input type="checkbox" id="treatment" value="fullbody"><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i> Full-Body Massage</label></input></li>
+         </ul>
+   
+
+         
+
+      <div class="extra-info">     
+        <div class="wave">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+      </div>   
+
+      <div class="center">
+        <label id="rating-label" for="rating">What was your overall experience?</label> 
+          <div class="rating">
+            <input name="stars" id="e1" type="radio" value="e1"></a><label for="e1"><span class="fa fa-star-o"></span></label>
+            <input name="stars" id="e2" type="radio" value="e2"></a><label for="e2"><span class="fa fa-star-o"></span></label>
+            <input name="stars" id="e3" type="radio" value="e3"></a><label for="e3"><span class="fa fa-star-o"></span></label>
+            <input name="stars" id="e4" type="radio" value="e4"></a><label for="e4"><span class="fa fa-star-o"></span></label>
+            <input name="stars" id="e5" type="radio" value="e5"></a><label for="e5"><span class="fa fa-star-o"></span></label>
+          </div>
+        
+         <div class="comments">
+          <label id="comments-label" for="comments">Any comments or suggestions?</label>
+            <textarea class="input-field" id="comments" name="comments"></textarea>
+         </div>
+            <button type="submit" id="submit" class="btn">Submit</button>
+        </div>
+</div>
+    </form>
+
+</div>
+</div>
+
+    <footer>
+        <p>Made by Stephanie for FreeCodeCamp</p>
+      </footer>
+</body>
+</html>
