@@ -90,8 +90,8 @@ body {
     
     input {
       margin-top: 1.5%;
-      padding: 0 0 0px 0;
-      background: transparent;
+      padding: 0 0 5px 0;
+      background:#4b6647;
       border: none;
       outline: none;
       border-bottom: 2px solid white;
@@ -148,6 +148,7 @@ body {
       display: block;
       border-radius: 0 0 20px 20px;
       font-weight: 900;
+      padding: 1px;
     }
     
     textarea {
@@ -310,19 +311,25 @@ body {
     }
     
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
 
-    body {
-        font-size: 0.9em;
-        }
+  body {
+    font-size: 0.9em;
+  }
 
-    .fa.fa-leaf {
-        font-size: 40px;
-        top: 50px;
-        right: 45px;
-        }
+  .fa.fa-leaf {
+    font-size: 40px;
+    top: 50px;
+    right: 45px;
+  }
 
-        .right {
-            width: 40%;
-          }
+  .right {
+    width: 40%;
+  }
+
+  .stack {
+    width: 30%;
+    padding-top: 10px;
+  }
+
 }
