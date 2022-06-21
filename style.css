@@ -98,7 +98,7 @@ body {
       font-size: 1.1em;
       font-weight: 400;
       color: white;
-      border-radius: none;
+      border-radius: 0px;
     }
       input:focus {
           border-color:rgba(206, 103, 19);
@@ -148,7 +148,7 @@ body {
       display: block;
       border-radius: 0 0 20px 20px;
       font-weight: 900;
-      padding: 1px;
+      padding-top: 1px;
     }
     
     textarea {
