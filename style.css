@@ -98,6 +98,7 @@ body {
       font-size: 1.1em;
       font-weight: 400;
       color: white;
+      border-radius: none;
     }
       input:focus {
           border-color:rgba(206, 103, 19);
